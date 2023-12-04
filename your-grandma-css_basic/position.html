@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position定位</title>
+</head>
+<body style="height: 1500px">
+    <!--position 固定定位
+        會讓該元素獨立一層，不管頁面怎麼移動，都只會在指定位置上出現
+        1. fixed(固定定位): 是以整個頁面為基準
+        2. relative(相對定位): 相對於該元素原本的位置為基準
+        3. absolute(絕對定位): 
+            只會在我們指定位置上出現，當外層容器有設定相對定位時，則只會在容器內做移動
+    -->
+    <h1>CSS教學</h1>
+    <div style="position: relative; background-color: blue; width: 80px; height: 80px;"></div>
+    <div style="background-color: red; width: 120px; height: 120px;"></div>
+    <br/>
+    <div style="position: relative; padding: 30px; border: 5px solid red;">
+        <div style="padding: 30px; border: 5px solid red;">
+            <div style="position: absolute; bottom: 0px; left: 0px; width: 40px; height: 40px; background-color: blue"></div>
+        </div>
+    </div>
+</body>
+</html>

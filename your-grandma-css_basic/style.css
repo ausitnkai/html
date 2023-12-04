@@ -1,0 +1,16 @@
+/*設定該class名稱的成員*/
+.food{
+    color: red;
+    background-color: rgb(100, 0, 100);
+}
+.person{
+    color: blue;
+}
+.background-gray{
+    background-color: gray;
+}
+/*設定該id名稱的成員*/
+#title{
+    color: blueviolet;
+    text-align: center;
+}

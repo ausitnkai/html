@@ -1,0 +1,24 @@
+@keyframes changecolor{
+    0% {background-color: red; top: 10px; left:10px;}
+    20% {background-color: orange; top: 20px; left:20px;}
+    40% {background-color: yellow; top: 30px; left:30px;}
+    60% {background-color: green; top: 40px; left:40px;}
+    80% {background-color: blue; top: 50px; left:50px;}
+    100% {background-color: purple; top: 60px; left:60px;}
+}
+.box {
+    height: 100px; width: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+}
+.box-animation:hover {
+    /*使用我們定義的動畫效果*/
+    animation-name: changecolor;
+    /*設定動畫會執行多久*/
+    animation-duration: 1s; 
+    /*設定動畫執行幾次*/
+    animation-iteration-count: infinite;
+    /*設定網頁載入後過多久才執行動畫*/
+    /*animation-delay: 2s;*/
+}

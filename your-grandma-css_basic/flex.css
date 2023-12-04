@@ -1,0 +1,35 @@
+.container{
+    /*將顯示方式變橫向，將 "上到下" 的元素改為 "左到右" 顯示*/
+    display: flex;
+    /*如果內部的元素有設定寬度的話，當元素擠壓到彼此就會做自動換行*/
+    flex-wrap: wrap;
+    /*column 將顯示方式改為 主軸:由上而下 次軸:由左而右*/
+    flex-direction: column;
+    /*justify-content 將具有flex屬性的容器內部的區塊做 "主軸上位置的調整"*/
+    justify-content: center;
+    /*align-content 將具有flex屬性的容器內部的區塊做 "次軸上位置的調整"*/
+    align-content: center;
+    /*align-itme
+        與 align-content 一樣是在次軸上做調整，但用於多行排版會跑掉
+    */
+   
+    height: 300px;
+    border: 1px solid red;
+}
+.container div{
+    border: 1px solid rgb(201, 201, 201);
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+}
+.box1{
+    /*flex 後面的數字代表該區塊所佔的大小，而所有的區塊合起來會占滿整個容器*/
+    /*order 後面的數字代表該區快要排第幾個*/
+    order: 1;
+}
+.box2{
+    order: 2;
+}
+.box3{
+    order: 3;
+}
